@@ -16,6 +16,7 @@ https://42kchoi.tistory.com/259?category=953120
 https://profq.tistory.com/30
 https://sites.cs.ucsb.edu/~manish/discussion/week2.pdf
 https://github.com/mathieupi/Minishell
+https://causlayer.orgs.hk/chichoon/42-Cursus/tree/main/03_minishell
 
 
 - signal
@@ -50,3 +51,8 @@ tgoto, tputs
 	rl_on_new_line();
 	rl_redisplay();
 	printf("  \b\b");
+
+
+
+
+https://github.com/mathieupi/Minishell/blob/master/src/inc/cd.c
