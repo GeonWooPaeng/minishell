@@ -1,0 +1,52 @@
+minishell 문서
+site
+https://brennan.io/2015/01/16/write-a-shell-in-c/
+https://mug896.github.io/bash-shell/index.html
+https://www.gnu.org/software/libc/manual/html_node/Implementing-a-Shell.html
+https://www.cs.purdue.edu/homes/grr/SystemsProgrammingBook/
+https://www.cs.cornell.edu/courses/cs414/2004su/homework/shell/shell.html
+https://www.cs.cornell.edu/courses/cs414/2004su/homework/shell/parse.html
+
+
+
+- minishell 함수 정리
+https://42kchoi.tistory.com/259?category=953120
+
+-전반적인 정리
+https://profq.tistory.com/30
+https://sites.cs.ucsb.edu/~manish/discussion/week2.pdf
+https://github.com/mathieupi/Minishell
+
+
+- signal
+https://velog.io/@hidaehyunlee/minishell-3.-%EC%8B%9C%EA%B7%B8%EB%84%90Signal-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0
+
+# 1일차 함수 알아보기 
+
+readline, rl_on_new_line, rl_replace_line,
+rl_redisplay, add_history,
+///
+printf, malloc, free,
+write, open, read, close, fork, wait, waitpid,
+wait3, wait4, signal, kill, exit, getcwd, chdir,
+stat, lstat, fstat, unlink, execve, dup, dup2,
+pipe, opendir, readdir, closedir, strerror, errno,
+///
+isatty, ttyname, ttyslot, ioctl, getenv, tcsetattr,
+tcgetattr, tgetent, tgetflag, tgetnum, tgetstr,
+tgoto, tputs
+
+
+//mac
+// sig == SIGINT
+	rl_on_new_line();
+	rl_redisplay();
+	printf("  \b\b\n");
+	rl_on_new_line();
+	rl_replace_line("", 0);
+	rl_redisplay();
+
+//  sig == SIGQUIT
+	rl_on_new_line();
+	rl_redisplay();
+	printf("  \b\b");
